@@ -1,0 +1,114 @@
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --bodyColor: rgb(240, 240, 246);
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: rgba(47, 106, 127, 0.6);
+        z-index: 1;
+    }
+
+    .background-video {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .homeContent {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+
+        .textDiv {
+            margin-bottom: 2rem;
+
+            .smallText {
+                font-size: 1.2rem;
+                color: var(--whiteColor);
+            }
+
+            .homeTitle {
+                font-size: 2.5rem;
+                color: var(--whiteColor);
+            }
+        }
+
+        .cardDiv {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+
+            .destinationInput,
+            .dateInput,
+            .priceInput {
+                background: var(--whiteColor);
+                padding: 1rem;
+                border-radius: 10px;
+
+                .input {
+                    display: flex;
+                    align-items: center;
+
+                    input {
+                        flex: 1;
+                        border: none;
+                        outline: none;
+                        padding: 0.5rem;
+                    }
+                }
+            }
+
+            .searchOptions {
+                background: var(--PrimaryColor);
+                padding: 1rem;
+                color: var(--whiteColor);
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+
+                .icon {
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+
+        .homeFooterIcons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+
+            .rightIcons,
+            .leftIcons {
+                display: flex;
+
+                .icon {
+                    font-size: 24px;
+                    color: var(--whiteColor);
+                    margin: 0 10px;
+
+                    &:hover {
+                        color: var(--PrimaryColor);
+                    }
+                }
+            }
+        }
+    }
+}
+
+

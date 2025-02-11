@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+/* 🌈 CSS Variables */
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+}
+
+/* 🌟 Header Styling */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--whiteColor);
+  padding: 1rem 2rem;
+  z-index: 1000;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔗 Logo */
+.logo {
+  color: var(--blackColor);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.logo .icon {
+  font-size: 1.8rem;
+  color: var(--PrimaryColor);
+  margin-right: 0.5rem;
+}
+
+/* 🌍 Navbar Links */
+.navBar {
+  display: flex;
+  align-items: center;
+}
+
+.navLists {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.navItem .navLink {
+  text-decoration: none;
+  color: var(--textColor);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navItem .navLink:hover {
+  color: var(--PrimaryColor);
+}
+
+/* 📌 Navbar Toggle for Mobile */
+.toggleNavbar {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.closeNavbar {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: var(--PrimaryColor);
+}
+
+/* ✨ Button */
+.btn {
+  background: var(--gradientColor);
+  padding: 0.6rem 1.5rem;
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn a {
+  color: var(--whiteColor);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: var(--SecondaryColor);
+}
+
+/* 📱 Mobile Styles */
+@media screen and (max-width: 1024px) {
+  .toggleNavbar {
+    display: block;
+    color: var(--PrimaryColor);
+  }
+
+  .navBar {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--whiteColor);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: top 0.4s ease-in-out;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .activeNavbar {
+    top: 0;
+  }
+
+  .navLists {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .closeNavbar {
+    display: block;
+  }
+}

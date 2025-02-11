@@ -1,0 +1,176 @@
+.footer {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(to right, hsl(199, 100%, 40%), hsl(187, 85%, 50%)); /* Lighter ocean blue */
+  color: var(--whiteColor);
+  padding: 3rem 0;
+  overflow: hidden;
+}
+
+/* Background Video */
+.videoDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Keep it behind content */
+}
+
+.videoDiv video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3; /* Make it visible but not overpowering */
+}
+
+/* Dark Overlay to Improve Readability */
+.videoDiv::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 20, 50, 0.4); /* Light blue transparent overlay */
+  z-index: 1;
+}
+
+.secContent {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.15); /* Light frosted glass effect */
+  border-radius: 15px;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+/* Contact Section */
+.contactDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.contactDiv .text small {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.contactDiv .text h2 {
+  font-size: 2rem;
+  color: var(--whiteColor);
+}
+
+.inputDiv {
+  display: flex;
+  gap: 1rem;
+}
+
+.inputDiv input {
+  border: none;
+  padding: 0.7rem;
+  border-radius: 3rem;
+  background: rgba(255, 255, 255, 0.2);
+  outline: none;
+  font-size: 1rem;
+  color: var(--whiteColor);
+}
+
+.inputDiv input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.btn-flex {
+  display: flex;
+  align-items: center;
+  background: hsl(199, 100%, 45%);
+  color: var(--whiteColor);
+  padding: 0.7rem 1.5rem;
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-flex:hover {
+  background: hsl(187, 85%, 55%);
+}
+
+/* Footer Content */
+.footerCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background: rgba(0, 80, 140, 0.8); /* Transparent ocean blue */
+  border-radius: 15px;
+}
+
+/* Footer Links */
+.footerLinks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.linkGroup {
+  text-align: left;
+}
+
+.linkGroup .groupTitle {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--whiteColor);
+}
+
+.footerList {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footerList:hover {
+  color: hsl(187, 85%, 70%);
+}
+
+/* Social Icons */
+.footerSocials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.footerSocials .icon {
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--whiteColor);
+  transition: 0.3s;
+}
+
+.footerSocials .icon:hover {
+  color: hsl(199, 100%, 70%);
+}
+
+/* Footer Bottom */
+.footerBottom {
+  width: 100%;
+  padding: 1rem;
+  background: hsl(199, 100%, 30%);
+  text-align: center;
+  margin-top: 2rem;
+  border-radius: 0 0 15px 15px;
+}
+
+.footerBottom small {
+  display: block;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+

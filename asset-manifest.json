@@ -1,29 +1,26 @@
 {
   "files": {
     "main.css": "/Expedia/static/css/main.e76ebd2b.css",
-    "main.js": "/Expedia/static/js/main.f421960f.js",
+    "main.js": "/Expedia/static/js/main.fabcfe32.js",
     "static/media/blue.mp4": "/Expedia/static/media/blue.b3d6b2ecd90421d09c72.mp4",
     "static/media/img10.jpg": "/Expedia/static/media/img10.c0548b39faaba76f5762.jpg",
     "static/media/img9.jpg": "/Expedia/static/media/img9.94d309495a464a28db1b.jpg",
     "static/media/video.mp4": "/Expedia/static/media/video.92d63f8d6cd184056fd7.mp4",
     "static/media/img3.jpg": "/Expedia/static/media/img3.537be849ab88ef56bf3e.jpg",
     "static/media/img1.jpg": "/Expedia/static/media/img1.9e0950e44c0b2f7e6d70.jpg",
-    "static/media/img5.jpg": "/Expedia/static/media/img5.a5890f2d59acf16b6766.jpg",
     "static/media/img2.jpg": "/Expedia/static/media/img2.8d9f2a8c48622a8003f1.jpg",
     "static/media/img13.jpg": "/Expedia/static/media/img13.bd8fdce517d8fd60cce7.jpg",
     "static/media/img12.jpg": "/Expedia/static/media/img12.da6c20b8561f259ea599.jpg",
     "static/media/img8.jpg": "/Expedia/static/media/img8.1d5fcd3f0e96d6df000c.jpg",
     "static/media/img14.jpg": "/Expedia/static/media/img14.b8b026f3f6c31ad8f191.jpg",
     "static/media/img11.jpg": "/Expedia/static/media/img11.ae7bf8bbd7ec5948d443.jpg",
-    "static/media/img6.jpg": "/Expedia/static/media/img6.0cb09d5bda8248fd8ce4.jpg",
-    "static/media/img4.jpg": "/Expedia/static/media/img4.854d18638ebdcd64ce4b.jpg",
     "static/media/img7.jpg": "/Expedia/static/media/img7.ea915c3a960fc98a4072.jpg",
     "index.html": "/Expedia/index.html",
     "main.e76ebd2b.css.map": "/Expedia/static/css/main.e76ebd2b.css.map",
-    "main.f421960f.js.map": "/Expedia/static/js/main.f421960f.js.map"
+    "main.fabcfe32.js.map": "/Expedia/static/js/main.fabcfe32.js.map"
   },
   "entrypoints": [
     "static/css/main.e76ebd2b.css",
-    "static/js/main.f421960f.js"
+    "static/js/main.fabcfe32.js"
   ]
 }
